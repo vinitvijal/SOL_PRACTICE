@@ -13,8 +13,6 @@ contract Hello {
         y += x;
         return y;
     }
-
-
 }
 
 
@@ -36,13 +34,23 @@ contract Base {
     }
 
 
-    function logic() public view returns(bool, bool, bool, bool){
+    function relation() public view returns(bool, bool, bool, bool){
         bool eq = publicVar == privateVar;
         bool not = publicVar != privateVar;
         bool gt = publicVar > privateVar;
         bool ls = publicVar < privateVar;
+        
         return (eq, not, gt, ls);
     }
+
+    function logic() public view returns(bool, bool, bool){
+        bool and = publicVar > 5 && privateVar < 10;
+        bool or = publicVar > 5  || privateVar < 10;
+        bool not = !(publicVar > 5);
+
+        return (and, or, not);
+    }
+
 
 
 }
