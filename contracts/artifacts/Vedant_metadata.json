@@ -11,25 +11,6 @@
 						"internalType": "uint256",
 						"name": "a",
 						"type": "uint256"
-					}
-				],
-				"name": "assign",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
@@ -37,13 +18,8 @@
 						"type": "uint256"
 					}
 				],
-				"name": "bitwise",
+				"name": "bit",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -106,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Hello.sol": "Binary"
+			"contracts/vedu.sol": "Vedant"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -120,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Hello.sol": {
-			"keccak256": "0x974cfe2a9d030b692dc05aa9f8ce5a8930651826b5b6c281625aeead145f3bf8",
+		"contracts/vedu.sol": {
+			"keccak256": "0x09a428820d8efc524a1f4973bc33f9a568653f674cb575c263170131cfd366e7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47eaaa38c64bb87948a8a7dbccb145c5594c8b5948f4f30fdb6cdc2f9dcabdea",
-				"dweb:/ipfs/QmQky2i9mUkghTgUuKRM1MdrJB7D4PZF3iej5s3mjcosgo"
+				"bzz-raw://0ed1dc0a28570440935ca6b10dccc5f7cb4c728a85f2eb8d03353916212e39e9",
+				"dweb:/ipfs/QmVnMniJJr4KfgZmSg6UMTn6NAhZUkMuqeqdWqW98RwgN2"
 			]
 		}
 	},

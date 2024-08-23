@@ -18,7 +18,7 @@ contract Hello {
 
 contract Binary {
 
-    function operations(uint a, uint b) pure public returns (uint, uint, uint, uint, uint, uint){
+    function bitwise(uint a, uint b) pure public returns (uint, uint, uint, uint, uint, uint){
         uint and = a & b;
         uint or = a | b;
         uint xor = a ^ b;
@@ -28,8 +28,42 @@ contract Binary {
 
         return (and, or, xor, lshift, rshift, not);
     }
+
+    function assign(uint a) pure public returns (uint) {
+        a += 10;
+        return a;
+
+    }
+
+    function prime(uint a) pure public returns (bool){
+        if(a < 2){
+            return false;
+        }else if(a == 2 || a == 3){
+            return true;
+        }else if(a % 2 == 0 || a % 3 == 0){
+            return false;
+        }
+        for (uint i = 5; i*i <= a; i = i + 6) {
+            if (a % i == 0 || a % (i + 2) == 0) 
+                return false; 
+        }
+        return true; 
+
+    }
 }
 
+
+contract HW {
+    string userInput;
+
+    function set(string memory finalValue) public  {
+        userInput = finalValue;
+    }
+
+    function get() public view returns(string memory){
+        return userInput;
+    }
+}
 
 
 contract Base {
@@ -65,7 +99,5 @@ contract Base {
 
         return (and, or, not);
     }
-
-
 
 }
