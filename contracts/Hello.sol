@@ -16,6 +16,21 @@ contract Hello {
 }
 
 
+contract Binary {
+
+    function operations(uint a, uint b) pure public returns (uint, uint, uint, uint, uint, uint){
+        uint and = a & b;
+        uint or = a | b;
+        uint xor = a ^ b;
+        uint lshift = a << b;
+        uint rshift = a >> b;
+        uint not = ~a;
+
+        return (and, or, xor, lshift, rshift, not);
+    }
+}
+
+
 
 contract Base {
     uint public publicVar = 20;
