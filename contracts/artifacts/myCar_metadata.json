@@ -7,19 +7,40 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "myFun",
+				"name": "getter",
 				"outputs": [
 					{
-						"internalType": "int256[5]",
+						"internalType": "string",
 						"name": "",
-						"type": "int256[5]"
-					},
-					{
-						"internalType": "uint256[6]",
-						"name": "",
-						"type": "uint256[6]"
+						"type": "string"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "s",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "k",
+						"type": "string"
+					}
+				],
+				"name": "setter",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -37,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/sep9.sol": "arrays"
+			"contracts/sep9.sol": "myCar"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

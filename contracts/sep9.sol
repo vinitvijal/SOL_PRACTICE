@@ -62,4 +62,12 @@ contract AddElements {
 }
 
 
-
+contract myCar{
+    string public s;
+    function setter(string memory k) public {
+        s = k;
+    }
+    function getter() public view returns(string memory){
+        return s;
+    }
+}
