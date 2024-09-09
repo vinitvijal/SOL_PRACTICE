@@ -6,6 +6,44 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr2",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "myFun",
 				"outputs": [
@@ -26,6 +64,19 @@
 					}
 				],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "slice",
+				"outputs": [
+					{
+						"internalType": "int256[5]",
+						"name": "",
+						"type": "int256[5]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -57,11 +108,11 @@
 	},
 	"sources": {
 		"contracts/sep9.sol": {
-			"keccak256": "0x97c4b1f9d058b3a1d33d08abd7be5f835a0c97cb4f0ffcdfcb4a8f4c41377334",
+			"keccak256": "0x9baae46220c2703fbdba5dd7533b78f5b7473153cd80df22e13c7c634c63079f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://57aea6871ea9cfa9a994496a85ee51ced8567ad14ce1ec275ef97b15b6319767",
-				"dweb:/ipfs/Qmcos1HTx29T6i6nQFBPgeFGK88kUkCGiayJ5jTiSbGndd"
+				"bzz-raw://254505d109adc3d5ef921263163ec48cdca822a4319d07410aa24da952dd807b",
+				"dweb:/ipfs/QmfMzybqFdgywRYjZwQ24JAaqgjvWRWMnQsC52yeKjbbiM"
 			]
 		}
 	},

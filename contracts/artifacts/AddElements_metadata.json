@@ -7,17 +7,25 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "myFun",
+				"name": "add1",
 				"outputs": [
 					{
-						"internalType": "int256[5]",
+						"internalType": "int256[10]",
 						"name": "",
-						"type": "int256[5]"
-					},
+						"type": "int256[10]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "add2",
+				"outputs": [
 					{
-						"internalType": "uint256[6]",
+						"internalType": "int256[10]",
 						"name": "",
-						"type": "uint256[6]"
+						"type": "int256[10]"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -37,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/sep9.sol": "arrays"
+			"contracts/sep9.sol": "AddElements"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
